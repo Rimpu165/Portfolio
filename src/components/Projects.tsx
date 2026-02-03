@@ -26,13 +26,14 @@ const Projects = () => {
       demo: "https://drive.google.com/file/d/1ylZN1JPV19orWtWnYeHfJ1pOGcGEHrWG/view?usp=sharing",
     },
     {
-      title: "E-Commerce Website (Vanilla JS)",
-      description: "Static e-commerce website with user-friendly interface and interactive product selection. Fully responsive using media queries, optimized for all devices.",
-      image: project3,
-      tags: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/rimpu165",
-      demo: "https://rimpu165.github.io/ecommerce.github.io/index.html",
-    },
+  title: "E-Commerce Website (MERN Stack)",
+  description:
+    "Full-stack e-commerce application built using the MERN stack with authentication, product management, cart functionality, and RESTful APIs. Designed for scalability and real-world use cases.",
+  image: project4, 
+  tags: ["MongoDB", "Express.js", "React", "Node.js"],
+  github: "https://github.com/rimpu165", 
+  demo: "#", 
+},
     {
       title: "Frontend Development Training",
       description: "Completed comprehensive training at Meander Software Pvt Ltd, working on responsive web pages and converting UI/UX designs into functional interfaces.",
