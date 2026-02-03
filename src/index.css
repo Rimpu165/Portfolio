@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Default to Dark Theme variables directly since we want a dark-first look */
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --primary: 190 100% 50%; /* Neon Cyan */
+    --primary-foreground: 190 100% 10%;
+    
+    --primary-glow: 190 100% 50%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 262 80% 50%; /* Neon Purple */
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+    --ring: 190 100% 50%;
+
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: radial-gradient(circle at top right, hsl(190 100% 50% / 0.15), transparent 40%),
+                     radial-gradient(circle at bottom left, hsl(262 80% 50% / 0.15), transparent 40%);
+    --gradient-subtle: linear-gradient(to bottom right, hsl(224 71% 4%), hsl(224 71% 6%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(190 100% 50% / 0.1);
+    --shadow-medium: 0 10px 40px -10px hsl(190 100% 50% / 0.2);
+    --shadow-large: 0 20px 60px -15px hsl(190 100% 50% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 224 71% 4%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 190 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 190 100% 50%;
+  }
+
+  .dark {
+    /* Same as root for consistency in this dark-themed portfolio */
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    /* ... (rest mapped to root values implicitly via CSS cascade if not overridden, 
+       but keeping clear definition involved) */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
