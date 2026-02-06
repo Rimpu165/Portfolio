@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Ripanshu rana Cv...pdf';
-    link.download = 'Ripanshu Rana CV.pdf';
+    link.href = '/Ripanshu%20Rana%20Mern%20Stack%20Developer.pdf';
+    link.download = 'Ripanshu Rana Mern Stack Developer.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
